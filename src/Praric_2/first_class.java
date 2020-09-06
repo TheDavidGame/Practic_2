@@ -57,7 +57,7 @@ import java.util.Scanner;
 
     }
     class Dog{
-        private String name;
+        public String name;
         private int age;
 
         public Dog(int age,String name) {
@@ -72,6 +72,14 @@ import java.util.Scanner;
                     ' ';
         }
 
+    }
+    class Dog_kennel{
+         public void addDogs(int n,Dog ... N){
+
+            for(int i = 0;i < n;i++){
+                System.out.print(N[i] + " ");
+            }
+        }
     }
 
 public class first_class {
@@ -101,6 +109,12 @@ public class first_class {
         /////////Task 4////////
         Dog c4 = new Dog(2,"Bobick");
         System.out.println(c4.toString());
+
+        Dog c5 = new Dog(3,"Sharik");
+        Dog c6 = new Dog(2,"Hatiko");
+
+        Dog_kennel c7 = new Dog_kennel();
+        c7.addDogs(3,c4,c5,c6);
     }
 
 
