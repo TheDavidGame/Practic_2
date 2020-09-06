@@ -56,6 +56,23 @@ import java.util.Scanner;
         }
 
     }
+    class Dog{
+        private String name;
+        private int age;
+
+        public Dog(int age,String name) {
+            this.age = age * 7;
+            this.name = name;
+        }
+
+        public String toString() {
+            return "Dog: " +
+                    "name='" + name + '\'' +
+                    ", age=" + age +
+                    ' ';
+        }
+
+    }
 
 public class first_class {
 
@@ -75,6 +92,15 @@ public class first_class {
 
         System.out.println("/////////////////");
         /////////Task 3////////
+        Book c3 = new Book();
+        c3.setCover("Green");
+        System.out.println(c3.getCover());
+        c3.setNumber_pages(133);
+        System.out.println(c3.getNumber_pages());
+        System.out.println("/////////////////");
+        /////////Task 4////////
+        Dog c4 = new Dog(2,"Bobick");
+        System.out.println(c4.toString());
     }
 
 
